@@ -19,4 +19,5 @@ OR
 - [ ] HTML manual edit to JS edit
 - [ ] Be able to update to do list in browser
 - [ ] Control through chat `!issue open <ticket num> <description>`
+  - Look up IRC bots + how they work (to pass data)
 - [ ] Allow viewers to add to a viewer task list
