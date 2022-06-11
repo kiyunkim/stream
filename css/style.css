@@ -1,12 +1,136 @@
 /* ************************************************** !!
 /* CSS CONTENTS ----------------------------------------
 --------------------------------------------------------
---| GENERAL/UTILITY
-----| 
+--| General / Utility
+--| To Do List
+------| Tasks
+-----------| Status
 --------------------------------------------------------
 ----------------------------------------------------- */
 
+/* ************************************************************
+***************************************************************
+--- General / Utility ---
+***************************************************************
+************************************************************ */
 body {
+  background: #888;
+  padding: 10px;
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.h1 {
+  font-weight: 700;
+}
+
+.h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* ************************************************************
+***************************************************************
+--- To Do List ---
+***************************************************************
+************************************************************ 
+.bg-work {
+  background-color: rgba(255, 192, 192, 0.85);
+}
+
+.bg-personal {
+  background-color: rgb(176, 229, 180, 0.85);
+}
+*/
+
+/* -----------------------------------------------------------
+--- Tasks ---
+------------------------------------------------------------ */
+.task {
+  background-color: rgba(255, 255, 255, .9);
+  padding: 10px;
+  margin: 5px 5px 10px;
+  border-radius: 8px;
+  border-left: 8px solid transparent;
+  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.1);
+}
+
+.task:last-of-type {
+  margin-bottom: 5px;
+}
+
+.task-num,
+.task-desc {
+  margin: 0;
+}
+
+.task-num {
+  color: #555;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* _________________________________________ */
+/* --- Status --- */
+.task .task-num::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 55px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  padding: 3px 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.not-started {
+  border-color: #999;
+}
+.not-started .task-num::after {
+  background-color: #999;
+  content: 'Not Started';
+}
+
+.blocked {
+  border-color: #c94050;
+}
+.blocked .task-num::after {
+  background-color: #c94050;
+  content: 'blocked';
+}
+
+.in-progress {
+  border-color: #ecb419; 
+}
+.in-progress .task-num::after {
+  background-color: #ecb419;
+  content: 'in progress';
+}
+
+.qa {
+  border-color: #554be3;
+}
+.qa .task-num::after {
+  background-color: #554be3;
+  content: 'in qa';
+}
+
+.in-approval {
+  border-color: #df8434;
+}
+.in-approval .task-num::after {
+  background-color: #df8434;
+  content: 'in approval';
+}
+
+.done {
+  border-color: #63c521;
+}
+.done .task-num::after {
+  background-color: #63c521;
+  content: 'done';
 }

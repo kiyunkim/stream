@@ -12,3 +12,11 @@ OR
 ## Scenes
 
 1. To Do list for Co-working
+
+### To do
+
+[] No ticket ## tasks?
+[] HTML manual edit to JS edit
+[] Be able to update to do list in browser
+[] Control through chat `!issue open <ticket num> <description>`
+[] Allow viewers to add to a viewer task list
