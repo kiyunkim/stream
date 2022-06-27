@@ -1,3 +1,26 @@
+/************ HTML REFERENCE ************
+
+<!-- ITEM WILL BE ADDED TO THIS CONTAINER -->
+<div id="log" class="sl__chat__layout">
+</div>
+
+<!-- CHAT ITEM -->
+<script type="text/template" id="chatlist_item">
+  <div data-from="{from}" data-id="{messageId}">
+    <span class="meta" style="color: {color}">
+      <span class="badges">
+      </span>
+      <span class="name">{from}</span>
+    </span>
+
+    <span class="message">
+      {message}
+    </span>
+  </div>
+</script>
+
+*************************************/
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,800,900);
 
 * {
