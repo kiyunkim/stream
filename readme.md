@@ -12,7 +12,7 @@
 
 ### To Do List Overlay
 
-![To do list](img/to-do-list.png)
+<img src="img/to-do-list.png" width="400">
 
 The # represents the ticket (task) number, the colored badge is the status, and the text gives a brief description of the task. The top portion of task is work-related and the bottom is life-related (sometimes hidden by petcam).
 
