@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background-color: #222;
+  overflow: hidden;
+  font-size: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.numbers {
+  width: 190px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.ampm {
+  font-size: 80%;
+  opacity: 0.8;
+}
